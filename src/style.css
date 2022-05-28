@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'seaside';
+    src: url('./fonts/seasrn__-webfont.woff2') format('woff2'),
+        url('./fonts/blokletters-balpen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blok';
+    src: url('./fonts/blokletters-balpen-webfont.woff2') format('woff2'),
+        url('./fonts/blokletters-balpen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    overflow: hidden;
+    border: 1px solid #58a16e;
+    background-color: #6abe83;
+}
+.name {
+    font-family: 'seaside';
+    font-size: 40pt;
+}
+.slogan {
+    font-family: 'blok';
+    font-size: 25pt;
+}
+button {
+    float: left;
+    color: #eef4da;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: 'blok';
+    font-weight: 800;
+}
+
+button:hover {
+    background-color: #f1ac9d;
+}
+
+button.active {
+    background-color: rgba(240,105,102,1) ;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    background-color: #eef4da;
+    color: #6abe83;
+    font-family: 'blok';
+    height: 100vh;
+}
+
+.display {
+    flex: 1;
+}
+.tabContent {
+    height: 100%;
+}
+
+#Home2 {
+    background-image: url('./img/sandwich.jpg');
+    background-size: cover;
+}
+
+.home{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 30px;
+}
+.slogan{
+    padding: 20px;
+}
+
+.menus {
+    padding: 30px 40px;
+}
+.menus > div {
+    font-family: 'seaside';
+    font-size: 20pt;
+}
+.menus > div > div {
+    font-size: 14pt;
+    font-family: 'blok';
+}
