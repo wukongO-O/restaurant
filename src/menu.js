@@ -28,11 +28,23 @@ const menus = function() {
     content.appendChild(menu);
 
     starters = document.createElement('div');
-    starters.textContent = 'Starters';
+    starters.classList.add('starters');
+    const startersH = document.createElement('div');
+    startersH.textContent = 'Starters';
+    starters.appendChild(startersH);
+
     sandw = document.createElement('div');
-    sandw.textContent = 'Sandwiches';
+    sandw.classList.add('sandw');
+    const sandwH = document.createElement('div');
+    sandwH.textContent = 'Sandwiches';
+    sandw.appendChild(sandwH);
+
     drinks = document.createElement('div');
-    drinks.textContent = 'Drinks';
+    drinks.classList.add('drinks');
+    const drinksH = document.createElement('div');
+    drinksH.textContent = 'Drinks';
+    drinks.appendChild(drinksH);
+    
     menu.appendChild(starters);
     menu.appendChild(sandw);
     menu.appendChild(drinks);

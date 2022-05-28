@@ -25,11 +25,14 @@
 }
 .name {
     font-family: 'seaside';
-    font-size: 40pt;
+    font-size: 50pt;
+    font-weight: 900;
 }
 .slogan {
     font-family: 'blok';
     font-size: 25pt;
+    padding: 30px;
+    font-weight: 900;
 }
 button {
     float: left;
@@ -38,9 +41,9 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 15px 25px;
+    padding: 15px 50px;
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 25px;
     font-family: 'blok';
     font-weight: 800;
 }
@@ -58,19 +61,22 @@ button.active {
     background-color: #eef4da;
     color: #6abe83;
     font-family: 'blok';
-    height: 100vh;
+    height: auto;
+    overflow: scroll;
 }
 
 .display {
     flex: 1;
+    height: 100vh;
 }
 .tabContent {
-    height: 100%;
+    height: 100vh;
 }
-
+/* background img size doesnt work well w full screen + menu background height problem*/
 #Home2 {
     background-image: url('./img/sandwich.jpg');
     background-size: cover;
+    background-position: 10% 15%;
 }
 
 .home{
@@ -83,13 +89,38 @@ button.active {
 }
 
 .menus {
-    padding: 30px 40px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
-.menus > div {
+.starters, .sandw, .drinks {
+    display: grid;
+    grid-template: 0.5fr 2fr 2fr / 1fr 1fr;
+    gap: 40px;
+}
+.starters > div:first-child, .sandw > div:first-child, .drinks > div:first-child {
     font-family: 'seaside';
-    font-size: 20pt;
+    font-size: 30pt;
+    grid-column: span 2;
+    align-self: end;
+    border: none;
 }
 .menus > div > div {
-    font-size: 14pt;
+    font-size: 18pt;
+    font-family: 'seaside';
+    border: 1px solid;
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    place-items: center center;
+}
+.menus > div p {
     font-family: 'blok';
+    font-size: 18pt;
+    grid-column: span 2;
+    justify-self: left;
+}
+#Contact2 {
+    font-family: 'seaside';
 }

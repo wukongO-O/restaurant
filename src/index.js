@@ -52,8 +52,7 @@ displayArea.appendChild(homeInfo);
 displayArea.appendChild(menuInfo);
 displayArea.appendChild(contactInfo);
 
-const footer = document.createElement('div');
-footer.classList.add('footer');
+const footer = document.createElement('footer');
 content.appendChild(footer);
 
 function navigation(e) {
