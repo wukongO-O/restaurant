@@ -7,7 +7,7 @@ const homepage = function() {
 
     const name = document.createElement('p');
     name.classList.add('name');
-    name.textContent = 'Busytown Bistro';
+    name.textContent = 'Busytown   Bistro';
     homeContent.appendChild(name);
 
     const slogan = document.createElement('p');

@@ -1,4 +1,3 @@
-//const content = document.getElementById('#content');
 var starters, sandw, drinks;
 const menuItem = (type, name, price) => {   
     const description = blurb => {
@@ -44,7 +43,7 @@ const menus = function() {
     const drinksH = document.createElement('div');
     drinksH.textContent = 'Drinks';
     drinks.appendChild(drinksH);
-    
+
     menu.appendChild(starters);
     menu.appendChild(sandw);
     menu.appendChild(drinks);

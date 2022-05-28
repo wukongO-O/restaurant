@@ -20,7 +20,6 @@
 
 .header {
     overflow: hidden;
-    border: 1px solid #58a16e;
     background-color: #6abe83;
 }
 .name {
@@ -82,8 +81,8 @@ button.active {
 
 .home{
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 60px 30px;
+    background-color: rgba(60, 59, 59, 0.492);
 }
 .slogan{
     padding: 20px;

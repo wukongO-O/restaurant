@@ -2,7 +2,6 @@ import homepage from "./home";
 import menus from "./menu";
 import contact from './contact';
 import './style.css';
-import sandwichpic from './img/sandwich.jpg';
 import giticon from './img/github.svg';
 
 const header = document.createElement('div');
@@ -23,24 +22,19 @@ const createTab = (tabName, tabModule) => {
     tabModule();
 };
 
-const tab1 = createTab('Home', homepage);
+createTab('Home', homepage);
 const btn1 = document.querySelector('#Home');
 btn1.classList.add('active');
 const homeInfo = document.querySelector('#Home2');
 const homeMsg = document.querySelector('.home');
-homeInfo.appendChild(homeMsg)
-/*
-const myIcon = new Image();
-myIcon.src = sandwichpic;
-homeInfo.appendChild(myIcon);
-*/
+homeInfo.appendChild(homeMsg);
 
-const tab2 = createTab('Menu', menus);
+createTab('Menu', menus);
 const menuInfo = document.querySelector('#Menu2');
 const fullMenus = document.querySelector('.menus');
 menuInfo.appendChild(fullMenus);
 
-const tab3 = createTab('Contact', contact);
+createTab('Contact', contact);
 const contactInfo = document.querySelector('#Contact2');
 const fullContact = document.querySelector('.contact');
 contactInfo.appendChild(fullContact);
