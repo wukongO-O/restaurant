@@ -56,8 +56,9 @@ button.active {
     background-color: rgba(240,105,102,1) ;
 }
 #content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
     background-color: #eef4da;
     color: #6abe83;
     font-family: 'blok';
@@ -66,13 +67,13 @@ button.active {
 }
 
 .display {
-    flex: 1;
     height: 100vh;
+    overflow: inherit;
 }
 .tabContent {
     height: 100vh;
 }
-/* background img size doesnt work well w full screen + menu background height problem*/
+
 #Home2 {
     background-image: url('./img/sandwich.jpg');
     background-size: cover;
@@ -123,4 +124,31 @@ button.active {
 }
 #Contact2 {
     font-family: 'seaside';
+    background-image: url(./img/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #eef4da;
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 2em;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer {
+    background-color: #58a16e;
+    color: #eef4da;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 35%;
+}
+footer img {
+    position: relative;
+    top: 5px;
+    left: 20px;
 }

@@ -3,6 +3,7 @@ import menus from "./menu";
 import contact from './contact';
 import './style.css';
 import sandwichpic from './img/sandwich.jpg';
+import giticon from './img/github.svg';
 
 const header = document.createElement('div');
 header.classList.add('header');
@@ -53,7 +54,20 @@ displayArea.appendChild(menuInfo);
 displayArea.appendChild(contactInfo);
 
 const footer = document.createElement('footer');
+const copyright = document.createElement('div');
+copyright.textContent = 'Created by Shenglan L';
+const gitlink = document.createElement('a');
+gitlink.setAttribute('href', 'https://github.com/wukongO-O/restaurant.git');
+const gitlogo = document.createElement('img');
+gitlogo.setAttribute('src', giticon);
+copyright.appendChild(gitlink);
+gitlink.appendChild(gitlogo);
+
+const photocredits =document.createElement('div');
+photocredits.textContent = 'Photos by Unsplash';
 content.appendChild(footer);
+footer.appendChild(copyright);
+footer.appendChild(photocredits);
 
 function navigation(e) {
     const allTabContent = document.getElementsByClassName('tabContent');
