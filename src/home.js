@@ -7,12 +7,12 @@ const homepage = function() {
 
     const name = document.createElement('p');
     name.classList.add('name');
-    name.textContent = 'Busytown   Bistro';
+    name.textContent = 'Busytown Bistro';
     homeContent.appendChild(name);
 
     const slogan = document.createElement('p');
     slogan.classList.add('slogan');
-    slogan.textContent = 'Catch a yummy break at Busytown Bistro! Best Food in town! Bon appetit!';
+    slogan.innerHTML = 'Catch a yummy break at <strong>Busytown Bistro</strong>! Best Food in town! <p>Bon appétit!</p>';
     homeContent.appendChild(slogan);
 };
 

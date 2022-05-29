@@ -18,21 +18,21 @@
     margin: 0;
 }
 
+#content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
+    background-color: #eef4da;
+    color: #6abe83;
+    font-family: 'blok';
+    overflow: scroll;
+}
+
 .header {
     overflow: hidden;
     background-color: #6abe83;
 }
-.name {
-    font-family: 'seaside';
-    font-size: 50pt;
-    font-weight: 900;
-}
-.slogan {
-    font-family: 'blok';
-    font-size: 25pt;
-    padding: 30px;
-    font-weight: 900;
-}
+
 button {
     float: left;
     color: #eef4da;
@@ -44,25 +44,13 @@ button {
     transition: 0.3s;
     font-size: 25px;
     font-family: 'blok';
-    font-weight: 800;
+    font-weight: 900;
 }
-
 button:hover {
     background-color: #f1ac9d;
 }
-
 button.active {
     background-color: rgba(240,105,102,1) ;
-}
-#content {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100%;
-    background-color: #eef4da;
-    color: #6abe83;
-    font-family: 'blok';
-    height: auto;
-    overflow: scroll;
 }
 
 .display {
@@ -84,8 +72,16 @@ button.active {
     padding: 60px 30px;
     background-color: rgba(60, 59, 59, 0.492);
 }
-.slogan{
+.name {
+    font-family: 'seaside';
+    font-size: 50pt;
+    font-weight: 900;
+}
+.slogan {
+    font-family: 'blok';
+    font-size: 25pt;
     padding: 20px;
+    font-weight: 900;
 }
 
 .menus {
@@ -103,7 +99,6 @@ button.active {
     font-family: 'seaside';
     font-size: 30pt;
     grid-column: span 2;
-    align-self: end;
     border: none;
 }
 .menus > div > div {
@@ -121,6 +116,7 @@ button.active {
     grid-column: span 2;
     justify-self: left;
 }
+
 #Contact2 {
     font-family: 'seaside';
     background-image: url(./img/contact.jpg);
