@@ -24,7 +24,7 @@ const Navigation = () => {
                 </div>
                 <div className="nav-link-container">
                     <Link className="nav-link" to='/menus'>
-                        Menus
+                        Menu
                     </Link>
                 </div>
                 <div className="nav-link-container">
