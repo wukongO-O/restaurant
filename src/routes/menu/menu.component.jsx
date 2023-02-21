@@ -1,5 +1,4 @@
 import { useContext, Fragment } from 'react';
-import { Outlet } from 'react-router-dom';
 import DishCard from '../../components/dish-card/dish-card.component';
 
 import { DishesContext } from '../../contexts/dishes.context';

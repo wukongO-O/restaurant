@@ -18,19 +18,9 @@
     justify-content: center;
   
     &:hover {
-      background-color: #eef4da;
-      color: rgba(240,105,102,1);
-      border: 1px solid #eef4da;;
-    }
-  
-    &.google-sign-in {
-      background-color: #4285f4;
-      color: white;
-  
-      &:hover {
-        background-color: #357ae8;
-        border: none;
-      }
+      background-color: rgba(240,105,102,1);
+      color: #eef4da;
+      border: 1px solid rgba(240,105,102,1);
     }
   
     &.inverted {
