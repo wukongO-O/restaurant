@@ -1,0 +1,24 @@
+.footer {
+    background-color: #58a16e;
+    color: #eef4da;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    font-family: 'BioRhyme', serif;
+    font-size: 12pt;
+
+    .copyright {
+        margin-right: 25%;
+        display: inline-flex;
+        gap: 5px;
+        align-items: center;
+
+        .github-link :hover {
+            stroke: rgba(240,105,102,1);
+            fill:rgba(240,105,102,1);
+        }
+    }
+
+}
