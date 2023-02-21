@@ -19,6 +19,10 @@
   
       .arrow {
         cursor: pointer;
+
+        &:hover {
+          color: #6abe83;
+        }
       }
   
       .value {
@@ -29,5 +33,9 @@
     .remove-button {
       padding-left: 12px;
       cursor: pointer;
+
+      &:hover {
+        color: #6abe83;
+      }
     }
   }

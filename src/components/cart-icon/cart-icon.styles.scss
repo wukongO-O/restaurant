@@ -7,6 +7,11 @@
     justify-content: center;
     cursor: pointer;
     margin-right: 25px;
+
+    &:hover .shopping-icon, &:hover .item-count {
+      stroke: rgba(240,105,102,1);
+      color: rgba(240,105,102,1);
+    }
   
     .shopping-icon {
       width: 28px;

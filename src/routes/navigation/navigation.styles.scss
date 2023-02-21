@@ -12,25 +12,20 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+    }
 
-      .nav-link-container {
-        height: 70px;
-        width: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .nav-link-container, .sign-in-link {
+      height: 70px;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        &:hover {
-            background-color: #f1ac9d;
-        }
-        &:active {
-            background-color: rgba(240,105,102,1);
-        }
+      &:hover {
+          background-color: #f1ac9d;
       }
-  
-      .nav-link {
-        padding: 10px 15px;
-        cursor: pointer;
+      &:active {
+          background-color: rgba(240,105,102,1);
       }
     }
   }
@@ -40,6 +35,8 @@
     font-family: 'BioRhyme', serif;
     font-size: 20pt;
     color: #eef4da;
+    padding: 10px 15px;
+        cursor: pointer;
   }
 
   .shopping-links {

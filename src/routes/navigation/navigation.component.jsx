@@ -34,15 +34,17 @@ const Navigation = () => {
                 </div>
             </div>
             <div className="shopping-links">
-                {currentUser ? (
-                    <span className='nav-link' onClick={signOutUser}>
-                        Sign out
-                    </span>
-                    ) : (
-                        <Link className='nav-link' to='/auth'>
-                        Sign in
-                        </Link>
-                )}
+                <div className="sign-in-link">
+                    {currentUser ? (
+                        <span className='nav-link' onClick={signOutUser}>
+                            Sign out
+                        </span>
+                        ) : (
+                            <Link className='nav-link' to='/auth'>
+                            Sign in
+                            </Link>
+                    )}
+                </div>
                 <Link className="checkout-link" to='/checkout' >
                     <CartIcon />
                 </Link>
