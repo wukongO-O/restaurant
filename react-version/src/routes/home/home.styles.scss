@@ -1,0 +1,35 @@
+.home{
+    text-align: center;
+    padding: 60px 30px; 
+    background-image: url(../../assets/sandwich.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    .name {
+        font-family: 'Bungee Shade';
+        font-size: 30pt;
+        color: #6abe83;
+    }
+}
+
+.slogan {
+    font-family: 'BioRhyme', serif;
+    font-size: 25pt;
+    padding: 50px 0;
+    color: #6abe83;
+    font-weight: 900;
+    background-color: rgba(60, 59, 59, 0.492);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        margin: 0;
+    }
+
+    .nav-link {
+        margin-top: 30px;
+    }
+}

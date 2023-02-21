@@ -1,0 +1,19 @@
+.contact {
+    font-family: 'BioRhyme', serif;
+    font-size: 25pt;
+    text-align: center;
+    color: #eef4da;
+    background-image: url(../../assets/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    p {
+        margin: 0;
+    }
+
+    .hours, .address, .tel{
+        padding-top: 25px;
+    }
+   
+}

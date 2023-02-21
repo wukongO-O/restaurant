@@ -1,0 +1,47 @@
+.navigation {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #6abe83;
+  
+    .nav-links-container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .nav-link-container {
+        height: 70px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #f1ac9d;
+        }
+        &:active {
+            background-color: rgba(240,105,102,1);
+        }
+      }
+  
+      .nav-link {
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+    font-size: 20pt;
+    color: #eef4da;
+  }
+
+  * {
+    box-sizing: border-box;
+  }

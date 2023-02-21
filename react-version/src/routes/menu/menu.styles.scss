@@ -1,0 +1,20 @@
+.menu-page{
+    background-color: #eef4da;
+    
+}
+
+.category-title {
+    font-family: 'Bungee Shade';
+    color: #6abe83;
+    font-size: 28pt;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 50px;
+}

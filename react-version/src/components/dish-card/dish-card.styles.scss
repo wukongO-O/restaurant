@@ -1,0 +1,32 @@
+.dish-card-container {
+    border: 1px solid #6abe83;
+    padding: 25px;
+    margin: 0 20px;
+    font-family: 'BioRhyme', serif;
+    color: #6abe83;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .dish-header {
+        display: flex;
+        justify-content: space-between;
+        
+        font-size: 18pt;
+    }
+
+    .dish-description-container {
+        font-size: 14pt;
+    }
+
+    .add-button-container{
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+
+        
+
+    }
+
+
+    
+}
